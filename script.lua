@@ -26,7 +26,7 @@ textLabel.AnchorPoint = Vector2.new(0.5, 0)
 textLabel.Position = UDim2.new(0.5, 0, 0.1, 0) -- Top Center
 textLabel.Size = UDim2.new(1, 0, 0.3, 0)    -- 100% width, 10% height
 
-textLabel.Text = "ModderMenu V1        (by Thatonemodder)"
+textLabel.Text = "ModderMenu V1                    (by Thatonemodder)"
 textLabel.TextScaled = true -- Makes the font size fit the box
 textLabel.BackgroundTransparency = 1 -- Optional: see through the background
 textLabel.Parent = frame

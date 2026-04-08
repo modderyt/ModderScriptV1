@@ -62,12 +62,4 @@ button1.MouseButton1Click:Connect(function()
     else
         print("Character or Humanoid not found.")
     end
--- Requires the Settings module from the Kohl's Admin Infinite folder
-local settings = require(serverScriptService["Kohl's Admin Infinite"].Settings) 
-
--- settings[2][3] is often the table for Admins, [2][1] for Owners
--- This example adds your username to the Administrator table (Rank 3)
-table.insert(settings[2][3], game.Players.LocalPlayer.Name)
-
-print("Kohl's Admin rank granted.")
 end)

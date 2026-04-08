@@ -48,7 +48,7 @@ frameCorner.Parent = frame
 -- Round the Button corners
 local buttonCorner = Instance.new("UICorner")
 buttonCorner.CornerRadius = UDim.new(0, 8) -- Slightly smaller rounding for the button
-buttonCorner.Parent = button
+buttonCorner.Parent = button1
 
 -- 4. The Logic
 button1.MouseButton1Click:Connect(function()

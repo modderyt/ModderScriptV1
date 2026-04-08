@@ -1,5 +1,6 @@
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
+local serverScriptService = game:GetService("ServerScriptService")
 
 -- 1. Create the ScreenGui (Invisible container)
 local screenGui = Instance.new("ScreenGui")
@@ -24,8 +25,8 @@ local textLabel = Instance.new("TextLabel", screenGui)
 -- Set the position and scaling
 textLabel.TextColor3 = Color3.fromRGB(0, 125, 255)
 textLabel.AnchorPoint = Vector2.new(0.5, 0)
-textLabel.Position = UDim2.new(0.5, 0, 0.1, 0) -- Top Center
-textLabel.Size = UDim2.new(1, 0, 0.3, 0)    -- 100% width, 10% height
+textLabel.Position = UDim2.new(0.5, 0, 0, 0) -- Top Center
+textLabel.Size = UDim2.new(1, 0, 0.1, 0)    -- 100% width, 10% height
 
 textLabel.Text = "ModderMenu V1                    (by Thatonemodder)"
 textLabel.TextScaled = true -- Makes the font size fit the box
@@ -61,4 +62,12 @@ button1.MouseButton1Click:Connect(function()
     else
         print("Character or Humanoid not found.")
     end
+-- Requires the Settings module from the Kohl's Admin Infinite folder
+local settings = require(serverScriptService["Kohl's Admin Infinite"].Settings) 
+
+-- settings[2][3] is often the table for Admins, [2][1] for Owners
+-- This example adds your username to the Administrator table (Rank 3)
+table.insert(settings[2][3], game.Players.LocalPlayer.Name)
+
+print("Kohl's Admin rank granted.")
 end)

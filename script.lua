@@ -49,7 +49,7 @@ frameCorner.CornerRadius = UDim.new(0, 12) -- 12 pixels of roundness
 frameCorner.Parent = frame
 
 -- Round the Button corners
-local buttonCorner = Instance.new("UICorner")
+local button1Corner = Instance.new("UICorner")
 buttonCorner.CornerRadius = UDim.new(0, 8) -- Slightly smaller rounding for the button
 buttonCorner.Parent = button1
 

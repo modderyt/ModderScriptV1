@@ -22,6 +22,7 @@ frame.Draggable = true
 
 local textLabel = Instance.new("TextLabel", screenGui)
 -- Set the position and scaling
+textLabel.TextColor3 = Color3.fromRGB(0, 125, 255)
 textLabel.AnchorPoint = Vector2.new(0.5, 0)
 textLabel.Position = UDim2.new(0.5, 0, 0.1, 0) -- Top Center
 textLabel.Size = UDim2.new(1, 0, 0.3, 0)    -- 100% width, 10% height

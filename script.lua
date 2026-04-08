@@ -1,4 +1,4 @@
-    ﻿local player = game.Players.LocalPlayer
+local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 -- 1. Create the ScreenGui (Invisible container)

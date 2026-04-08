@@ -28,7 +28,7 @@ textLabel.Size = UDim2.new(1, 0, 0.1, 0)    -- 100% width, 10% height
 
 textLabel.Text = "ModderMenu V1        (by Thatonemodder)"
 textLabel.TextScaled = true -- Makes the font size fit the box
-textLabel.BackgroundTransparency = 0.5 -- Optional: see through the background
+textLabel.BackgroundTransparency = 1 -- Optional: see through the background
 textLabel.Parent = frame
 
 -- 3. Create the Button (Inside the Frame)
